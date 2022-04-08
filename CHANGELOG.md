@@ -1,6 +1,9 @@
 ## 1.0.0
 - Migrate to new organization.
 
+- check new args/flags
+- check json body for more info
+
 ## 0.9.1 (Unreleased)
 - Correct minimum supported version to 2.1.0.
 - Fix minimum supported version check accuracy.

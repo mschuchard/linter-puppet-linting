@@ -5,3 +5,4 @@ spec
 .travis.yml
 .circleci
 linter_puppet_linting.png
+package-lock.json
