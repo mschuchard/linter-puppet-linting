@@ -7,7 +7,7 @@ This package provides linter support for your Puppet manifests through Atom-Lint
 ![Preview](https://raw.githubusercontent.com/AtomLinter/linter-puppet-lint/master/linter_puppet_lint.png)
 
 ## Installation
-The `puppet-lint` gem must be installed. The minimum supported version of `puppet-lint` is 2.0.0. The Linter and Language-Puppet Atom packages are also required.
+The `puppet-lint` gem must be installed. The minimum supported version of `puppet-lint` is 2.1.0. The Linter and Language-Puppet Atom packages are also required.
 
 ### Usage
 - There are no special notes for using this package.
