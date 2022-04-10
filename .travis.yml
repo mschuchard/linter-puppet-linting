@@ -1,50 +1,28 @@
-### Project specific config ###
-dist: trusty
+# setup environment
+dist: focal
 language: ruby
-
-matrix:
-  include:
-    - os: linux
-      rvm: 2.3.7
-
-    - os: linux
-      rvm: 2.3.7
-      env: ATOM_CHANNEL=beta
-
-env:
-  global:
-    APM_TEST_PACKAGES: "language-puppet"
-
-install:
-  - gem install --no-document puppet-lint
-
-before_script:
-  - puppet-lint --version
-
-### Generic setup follows ###
-script:
-  - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
-  - chmod u+x build-package.sh
-  - ./build-package.sh
-
-notifications:
-  email:
-    on_success: never
-    on_failure: change
+cache: bundler
 
 branches:
   only:
-    - master
+  - master
+
+notifications:
+  email: false
 
 git:
-  depth: 10
+  depth: 5
 
-sudo: false
+# setup tests
+env:
+  global:
+  - APM_TEST_PACKAGES='language-puppet'
+  - ATOM_LINT_WITH_BUNDLED_NODE='true'
 
-addons:
-  apt:
-    packages:
-    - build-essential
-    - git
-    - libgnome-keyring-dev
-    - fakeroot
+os: linux
+rvm: 2.7
+
+# execute tests
+install: gem install --no-document puppet-lint
+before_script: puppet-lint --version
+script: 'curl -s https://raw.githubusercontent.com/mschuchard/vagrant-boxes-docker-images/master/atom-build-package.sh | sh'

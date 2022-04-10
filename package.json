@@ -2,7 +2,7 @@
   "name": "linter-puppet-linting",
   "main": "./lib/main.js",
   "version": "1.0.0",
-  "description": "Puppet linting via Puppet-Lint",
+  "description": "Puppet linting via Puppet-Lint (formerly linter-puppet-lint)",
   "repository": "https://github.com/mschuchard/linter-puppet-linting",
   "license": "MIT",
   "private": true,
