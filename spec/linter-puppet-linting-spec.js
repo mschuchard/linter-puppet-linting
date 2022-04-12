@@ -3,8 +3,8 @@
 // eslint-disable-next-line no-unused-vars
 import * as path from 'path';
 
-const cleanPath = path.join(__dirname, 'fixtures', 'test_clean.pp');
-const errorsPath = path.join(__dirname, 'fixtures', 'test_errors.pp');
+const cleanPath = path.join(__dirname, 'fixtures', 'clean.pp');
+const errorsPath = path.join(__dirname, 'fixtures', 'errors.pp');
 
 describe('The puppet-lint provider for Linter', () => {
   const { lint } = require(path.join(__dirname, '../lib/main.js')).provideLinter();
@@ -30,12 +30,12 @@ describe('The puppet-lint provider for Linter', () => {
     expect(messages[0].severity).toBeDefined();
     expect(messages[0].excerpt).toBeDefined();
     expect(messages[0].location.file).toBeDefined();
-    expect(messages[0].location.file).toEqual(errorsPath);
+    expect(messages[0].location.file).toMatch(/.+errors\.pp$/);
     expect(messages[0].location.position).toBeDefined();
     expect(messages[1].severity).toBeDefined();
     expect(messages[1].excerpt).toBeDefined();
     expect(messages[1].location.file).toBeDefined();
-    expect(messages[1].location.file).toEqual(errorsPath);
+    expect(messages[1].location.file).toMatch(/.+errors\.pp$/);
     expect(messages[1].location.position).toBeDefined();
   });
 });
