@@ -2,9 +2,6 @@
 - Migrate to new organization.
 - Fix all functionality issues with package.
 
-- fix warnings from ci
-- -l, --load FILE                  Load a file containing custom puppet-lint checks.
-
 ## 0.9.1 (Unreleased)
 - Correct minimum supported version to 2.1.0.
 - Fix minimum supported version check accuracy.

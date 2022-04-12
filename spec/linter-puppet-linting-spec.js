@@ -30,12 +30,12 @@ describe('The puppet-lint provider for Linter', () => {
     expect(messages[0].severity).toBeDefined();
     expect(messages[0].excerpt).toBeDefined();
     expect(messages[0].location.file).toBeDefined();
-    expect(messages[0].location.file).toMatch(/.+errors\.pp$/);
+    expect(messages[0].location.file).toEqual('errors.pp');
     expect(messages[0].location.position).toBeDefined();
     expect(messages[1].severity).toBeDefined();
     expect(messages[1].excerpt).toBeDefined();
     expect(messages[1].location.file).toBeDefined();
-    expect(messages[1].location.file).toMatch(/.+errors\.pp$/);
+    expect(messages[1].location.file).toEqual('errors.pp');
     expect(messages[1].location.position).toBeDefined();
   });
 });
