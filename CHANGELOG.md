@@ -1,10 +1,9 @@
 ## 1.0.0
 - Migrate to new organization.
-- Fix base package functionality.
+- Fix all functionality issues with package.
 
-- fix flags/args setting by using some kind of map in config
-- check new args/flags
 - fix warnings from ci
+- -l, --load FILE                  Load a file containing custom puppet-lint checks.
 
 ## 0.9.1 (Unreleased)
 - Correct minimum supported version to 2.1.0.
