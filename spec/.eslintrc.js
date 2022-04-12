@@ -1,17 +1,9 @@
 module.exports = {
-  env: {
-    atomtest: true,
-    jasmine: true,
+  globals: {
+    waitsForPromise: true
   },
-  rules: {
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true
-      }
-    ],
-    "object-curly-newline": ["error", {
-      "ImportDeclaration": "never",
-    }]
+  env: {
+    jasmine: true,
+    atomtest: true,
   }
 };

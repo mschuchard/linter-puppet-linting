@@ -33,3 +33,8 @@ jobs:
         - ~/.atom/packages
         # ideally also apt when that is supported
         key: linter-puppet-linting
+
+workflows:
+  execute_tests:
+    jobs:
+    - test
