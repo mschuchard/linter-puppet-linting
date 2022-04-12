@@ -1,8 +1,10 @@
 ## 1.0.0
 - Migrate to new organization.
+- Fix base package functionality.
 
+- fix flags/args setting by using some kind of map in config
 - check new args/flags
-- check json body for more info
+- fix warnings from ci
 
 ## 0.9.1 (Unreleased)
 - Correct minimum supported version to 2.1.0.
