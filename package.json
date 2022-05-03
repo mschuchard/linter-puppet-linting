@@ -73,6 +73,12 @@
       "description": "The level of error to return (warning, error, or all).",
       "default": "all"
     },
+    "customChecks": {
+      "title": "Custom Checks File",
+      "type": "string",
+      "description": "Path to a file containing custom Puppet Lint checks.",
+      "default": ""
+    },
     "checkFlags": {
       "title": "Check Flags",
       "type": "string",

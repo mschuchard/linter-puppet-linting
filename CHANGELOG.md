@@ -1,3 +1,6 @@
+## Next
+- Add config option to load a file containing custom checks.
+
 ## 1.0.0
 - Migrate to new organization.
 - Fix all functionality issues with package.
