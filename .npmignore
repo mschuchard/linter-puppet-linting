@@ -6,3 +6,4 @@ spec
 .circleci
 linter_puppet_linting.png
 package-lock.json
+.github
