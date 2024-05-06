@@ -12,6 +12,9 @@
     "puppet",
     "puppet-lint"
   ],
+  "scripts": {
+    "test": "pulsar --test spec"
+  },
   "bugs": {
     "url": "https://github.com/mschuchard/linter-puppet-linting/issues"
   },
@@ -41,7 +44,7 @@
         "error",
         {
           "ignore": [
-            "atom"
+            "pulsar"
           ]
         }
       ]
@@ -51,7 +54,7 @@
       "node": true
     },
     "globals": {
-      "atom": false
+      "pulsar": false
     }
   },
   "configSchema": {

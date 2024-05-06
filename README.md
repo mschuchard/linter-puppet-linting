@@ -2,7 +2,7 @@
 
 # linter-puppet-linting
 
-This Atom/Pulsar package is the new home of AtomLinter/linter-puppet-lint. That package was no longer able to be maintained due to lack of administrator permissions to fix the continuous integration tests and/or bypass the protected branch status. Therefore I have migrated the package I formerly maintained there to its new home here.
+This Pulsar package is the new home of `AtomLinter/linter-puppet-lint`. That package was no longer able to be maintained due to lack of administrator permissions to fix the continuous integration tests and/or bypass the protected branch status. Therefore I have migrated the package I formerly maintained there to its new home here.
 
 This package provides linter support for your Puppet manifests in Pulsar using Puppet-Lint.
 
